@@ -196,9 +196,9 @@ if __name__ == "__main__":
     import argparse
     parser = argparse.ArgumentParser()
     parser.add_argument("--multi_modal_model_name", type=str, help="your multi-modal model path", default="llava-hf/llava-1.5-13b-hf")
-    parser.add_argument("--tuned_model_name", type=str, help="your trained model path", default="/home/ubuntu/qwen1.5b")
-    parser.add_argument("--dataset_path", type=str, default="/home/ubuntu/masrl/data/test")
-    parser.add_argument("--log_path", type=str, default="log.txt")
+    parser.add_argument("--tuned_model_name", type=str, help="your trained model path")
+    parser.add_argument("--dataset_path", type=str)
+    parser.add_argument("--log_path", type=str)
 
     args = parser.parse_args()
   
