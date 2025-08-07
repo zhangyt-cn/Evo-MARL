@@ -1,7 +1,10 @@
 # 💪 Evo-MARL
 
+<p align="center">
+    <a href="https://arxiv.org/abs/2508.03864"><img src="https://img.shields.io/badge/📃-Arxiv-b31b1b?style=for-the-badge"></a>
+</p>
 
-<p align="left">
+<p align="center">
     🧐&nbsp;<a href="#-about">About</a>
     | 🔧&nbsp;<a href="#-setup">Setup</a>
     | 🚀&nbsp;<a href="#-quick-start">Quick Start</a>
@@ -44,13 +47,27 @@ The codebase is built upon [OpenRLHF](https://github.com/OpenRLHF/OpenRLHF), our
 ### Evaluation
 Our red team evaluation is in multi-modal setting, where other trained agents are asked to assess potential unsafe content, exposed by a jailbreaked multi-modal agent (collective safety awareness). Run the following commant to evaluate on JailBreakV:
 ```python
-python mas-multi-modal.py
+python mas-multi-modal.py \
+    --multi_modal_model_name llava-hf/llava-1.5-13b-hf \
+    --tuned_model_name /path/to/trained/model \
+    --dataset_path /path/to/data/test \
+    --log_path /path/to/log/file
 ```
 Evaluations on other datasets need subtle modifications. "Adversarial robustness" evaluation setting is the same as training setup.
 
 ## 🙏 Acknowledgement 
-We thank [OpenRLHF](https://github.com/OpenRLHF/OpenRLHF) team for their wonderful work!
+We thank [OpenRLHF](https://github.com/OpenRLHF/OpenRLHF) team for their wonderful work.
 
 ## 📝 Citation
 If you find this work useful, please consider citing:
-
+```bash
+@misc{pan2025evomarlcoevolutionarymultiagentreinforcement,
+      title={Evo-MARL: Co-Evolutionary Multi-Agent Reinforcement Learning for Internalized Safety}, 
+      author={Zhenyu Pan and Yiting Zhang and Yutong Zhang and Jianshu Zhang and Haozheng Luo and Yuwei Han and Dennis Wu and Hong-Yu Chen and Philip S. Yu and Manling Li and Han Liu},
+      year={2025},
+      eprint={2508.03864},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2508.03864}, 
+}
+```
