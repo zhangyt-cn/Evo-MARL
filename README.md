@@ -1,10 +1,10 @@
 # 💪 Evo-MARL
 
-<p align="center">
+<p align="left">
     <a href="https://arxiv.org/abs/2508.03864"><img src="https://img.shields.io/badge/📃-Arxiv-b31b1b?style=for-the-badge"></a>
 </p>
 
-<p align="center">
+<p align="left">
     🧐&nbsp;<a href="#-about">About</a>
     | 🔧&nbsp;<a href="#-setup">Setup</a>
     | 🚀&nbsp;<a href="#-quick-start">Quick Start</a>
